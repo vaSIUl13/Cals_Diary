@@ -159,7 +159,7 @@ document.addEventListener("DOMContentLoaded", () => {
           f: 1.3,
           c: 76,
           price: "55 грн / кг",
-          img: "./images/carb_img/bulgur.jpg",
+          img: "./images/carb_img/bulgur.webp",
         },
         {
           name: "Перловка",
