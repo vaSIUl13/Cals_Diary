@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
           f: 1.2,
           c: 0,
           price: "200 грн / кг",
-          img: './images/protein_img/chicken_fillet.jpg',
+          img: "./images/protein_img/chicken_fillet.jpg",
         },
         {
           name: "Сир кисломолочний 5%",
@@ -412,9 +412,9 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   function renderProducts(items) {
-    productsSlider.innerHTML = '';
+    productsSlider.innerHTML = "";
 
-    items.forEach(product => {
+    items.forEach((product) => {
       const cardHTML = `
         <article class="product-card">
           <div class="product-card__image-wrapper">
@@ -435,7 +435,7 @@ document.addEventListener("DOMContentLoaded", () => {
           </div>
         </article>
       `;
-      productsSlider.insertAdjacentHTML('beforeend', cardHTML);
+      productsSlider.insertAdjacentHTML("beforeend", cardHTML);
     });
   }
 

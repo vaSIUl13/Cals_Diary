@@ -29,149 +29,171 @@
     </header>
 
     <main class="main diary-page">
-  <div class="container">
+      <div class="container">
+        <header class="diary-nav">
+          <button
+            class="diary-nav__btn"
+            id="prev-day-btn"
+            aria-label="Попередній день"
+          >
+            ❮
+          </button>
 
-    <header class="diary-nav">
-      <button class="diary-nav__btn" id="prev-day-btn" aria-label="Попередній день">❮</button>
-      
-      <div class="diary-nav__date-wrapper">
-        <h2 class="diary-nav__date" id="current-date-display">Сьогодні, 15 березня</h2>
-        <input type="date" id="date-picker" class="diary-nav__date-input">
+          <div class="diary-nav__date-wrapper">
+            <h2 class="diary-nav__date" id="current-date-display">
+              Сьогодні, 15 березня
+            </h2>
+            <input type="date" id="date-picker" class="diary-nav__date-input" />
+          </div>
+
+          <button
+            class="diary-nav__btn"
+            id="next-day-btn"
+            aria-label="Наступний день"
+          >
+            ❯
+          </button>
+        </header>
+
+        <section class="diary-summary block">
+          <div class="diary-summary__math">
+            <div class="math-item">
+              <span class="math-item__value" id="goal-cals">2400</span>
+              <span class="math-item__label">Ціль</span>
+            </div>
+
+            <div class="math-item__operator">-</div>
+
+            <div class="math-item">
+              <span class="math-item__value" id="eaten-cals">0</span>
+              <span class="math-item__label">Спожито</span>
+            </div>
+
+            <div class="math-item__operator">=</div>
+
+            <div class="math-item math-item--highlight">
+              <span class="math-item__value" id="remaining-cals">2400</span>
+              <span class="math-item__label">Залишилось</span>
+            </div>
+          </div>
+
+          <div class="diary-summary__macros macros">
+            <div class="macros__item macros__item--protein">
+              <div class="macros__header-row">
+                <span class="macros__label">Білки</span>
+                <span class="macros__value">0г / 180г</span>
+              </div>
+              <div class="macros__track">
+                <div class="macros__fill" style="width: 0%"></div>
+              </div>
+            </div>
+
+            <div class="macros__item macros__item--fat">
+              <div class="macros__header-row">
+                <span class="macros__label">Жири</span>
+                <span class="macros__value">0г / 66г</span>
+              </div>
+              <div class="macros__track">
+                <div class="macros__fill" style="width: 0%"></div>
+              </div>
+            </div>
+
+            <div class="macros__item macros__item--carbs">
+              <div class="macros__header-row">
+                <span class="macros__label">Вуглеводи</span>
+                <span class="macros__value">0г / 270г</span>
+              </div>
+              <div class="macros__track">
+                <div class="macros__fill" style="width: 0%"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="meals-grid">
+          <article class="meal-card" id="meal-breakfast">
+            <div class="meal-card__header">
+              <h3 class="meal-card__title">Сніданок</h3>
+              <span class="meal-card__total">0 ккал</span>
+            </div>
+            <ul class="meal-card__list">
+              <li class="meal-card__empty-text">Ще нічого не додано</li>
+            </ul>
+            <button class="meal-card__add-btn">+ Додати продукт</button>
+          </article>
+
+          <article class="meal-card" id="meal-lunch">
+            <div class="meal-card__header">
+              <h3 class="meal-card__title">Обід</h3>
+              <span class="meal-card__total">0 ккал</span>
+            </div>
+            <ul class="meal-card__list">
+              <li class="meal-card__empty-text">Ще нічого не додано</li>
+            </ul>
+            <button class="meal-card__add-btn">+ Додати продукт</button>
+          </article>
+
+          <article class="meal-card" id="meal-dinner">
+            <div class="meal-card__header">
+              <h3 class="meal-card__title">Вечеря</h3>
+              <span class="meal-card__total">0 ккал</span>
+            </div>
+            <ul class="meal-card__list">
+              <li class="meal-card__empty-text">Ще нічого не додано</li>
+            </ul>
+            <button class="meal-card__add-btn">+ Додати продукт</button>
+          </article>
+
+          <article class="meal-card" id="meal-snacks">
+            <div class="meal-card__header">
+              <h3 class="meal-card__title">Перекуси</h3>
+              <span class="meal-card__total">0 ккал</span>
+            </div>
+            <ul class="meal-card__list">
+              <li class="meal-card__empty-text">Ще нічого не додано</li>
+            </ul>
+            <button class="meal-card__add-btn">+ Додати продукт</button>
+          </article>
+        </section>
       </div>
-      
-      <button class="diary-nav__btn" id="next-day-btn" aria-label="Наступний день">❯</button>
-    </header>
 
-    <section class="diary-summary block">
-      <div class="diary-summary__math">
-        <div class="math-item">
-          <span class="math-item__value" id="goal-cals">2400</span>
-          <span class="math-item__label">Ціль</span>
-        </div>
-        
-        <div class="math-item__operator">-</div>
-        
-        <div class="math-item">
-          <span class="math-item__value" id="eaten-cals">0</span>
-          <span class="math-item__label">Спожито</span>
-        </div>
-        
-        <div class="math-item__operator">=</div>
-        
-        <div class="math-item math-item--highlight">
-          <span class="math-item__value" id="remaining-cals">2400</span>
-          <span class="math-item__label">Залишилось</span>
-        </div>
-      </div>
+      <div class="modal hidden" id="food-modal">
+        <div class="modal__content">
+          <div class="modal__header">
+            <h3 class="modal__title">Додати продукт</h3>
+            <button class="modal__close" id="modal-close">✕</button>
+          </div>
 
-      <div class="diary-summary__macros macros">
-        <div class="macros__item macros__item--protein">
-          <div class="macros__header-row">
-            <span class="macros__label">Білки</span>
-            <span class="macros__value">0г / 180г</span>
+          <div class="modal__search">
+            <input
+              type="text"
+              id="food-search-input"
+              placeholder="Наприклад: Вівсянка, Банан, Куряче філе..."
+            />
+            <button id="food-search-btn">Шукати</button>
           </div>
-          <div class="macros__track">
-            <div class="macros__fill" style="width: 0%;"></div>
-          </div>
-        </div>
-        
-        <div class="macros__item macros__item--fat">
-          <div class="macros__header-row">
-            <span class="macros__label">Жири</span>
-            <span class="macros__value">0г / 66г</span>
-          </div>
-          <div class="macros__track">
-            <div class="macros__fill" style="width: 0%;"></div>
-          </div>
-        </div>
-        
-        <div class="macros__item macros__item--carbs">
-          <div class="macros__header-row">
-            <span class="macros__label">Вуглеводи</span>
-            <span class="macros__value">0г / 270г</span>
-          </div>
-          <div class="macros__track">
-            <div class="macros__fill" style="width: 0%;"></div>
+
+          <ul class="modal__results" id="modal-results"></ul>
+
+          <div class="modal__portion hidden" id="modal-portion-section">
+            <p class="modal__selected-food" id="selected-food-name">
+              Вибрано: -
+            </p>
+            <div class="modal__portion-input-group">
+              <input
+                type="number"
+                id="food-portion-input"
+                placeholder="Вага (грам)"
+              />
+              <span>г</span>
+            </div>
+            <button id="add-to-diary-btn" class="modal__add-btn">
+              Додати в щоденник
+            </button>
           </div>
         </div>
       </div>
-    </section>
-
-    <section class="meals-grid">
-      
-      <article class="meal-card" id="meal-breakfast">
-        <div class="meal-card__header">
-          <h3 class="meal-card__title">Сніданок</h3>
-          <span class="meal-card__total">0 ккал</span>
-        </div>
-        <ul class="meal-card__list">
-          <li class="meal-card__empty-text">Ще нічого не додано</li>
-        </ul>
-        <button class="meal-card__add-btn">+ Додати продукт</button>
-      </article>
-
-      <article class="meal-card" id="meal-lunch">
-        <div class="meal-card__header">
-          <h3 class="meal-card__title">Обід</h3>
-          <span class="meal-card__total">0 ккал</span>
-        </div>
-        <ul class="meal-card__list">
-          <li class="meal-card__empty-text">Ще нічого не додано</li>
-        </ul>
-        <button class="meal-card__add-btn">+ Додати продукт</button>
-      </article>
-
-      <article class="meal-card" id="meal-dinner">
-        <div class="meal-card__header">
-          <h3 class="meal-card__title">Вечеря</h3>
-          <span class="meal-card__total">0 ккал</span>
-        </div>
-        <ul class="meal-card__list">
-          <li class="meal-card__empty-text">Ще нічого не додано</li>
-        </ul>
-        <button class="meal-card__add-btn">+ Додати продукт</button>
-      </article>
-
-      <article class="meal-card" id="meal-snacks">
-        <div class="meal-card__header">
-          <h3 class="meal-card__title">Перекуси</h3>
-          <span class="meal-card__total">0 ккал</span>
-        </div>
-        <ul class="meal-card__list">
-          <li class="meal-card__empty-text">Ще нічого не додано</li>
-        </ul>
-        <button class="meal-card__add-btn">+ Додати продукт</button>
-      </article>
-
-    </section>
-  </div>
-
-  <div class="modal hidden" id="food-modal">
-      <div class="modal__content">
-        <div class="modal__header">
-          <h3 class="modal__title">Додати продукт</h3>
-          <button class="modal__close" id="modal-close">✕</button>
-        </div>
-        
-        <div class="modal__search">
-          <input type="text" id="food-search-input" placeholder="Наприклад: Вівсянка, Банан, Куряче філе..." />
-          <button id="food-search-btn">Шукати</button>
-        </div>
-        
-        <ul class="modal__results" id="modal-results">
-          </ul>
-        
-        <div class="modal__portion hidden" id="modal-portion-section">
-          <p class="modal__selected-food" id="selected-food-name">Вибрано: -</p>
-          <div class="modal__portion-input-group">
-            <input type="number" id="food-portion-input" placeholder="Вага (грам)" />
-            <span>г</span>
-          </div>
-          <button id="add-to-diary-btn" class="modal__add-btn">Додати в щоденник</button>
-        </div>
-      </div>
-    </div>
-</main>
+    </main>
 
     <script src="js/diary.js"></script>
   </body>

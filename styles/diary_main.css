@@ -122,9 +122,15 @@
   left: 0;
 }
 
-.macros__item--protein .macros__fill { background-color: #3b82f6; }
-.macros__item--fat .macros__fill     { background-color: #ef4444; }
-.macros__item--carbs .macros__fill   { background-color: #f59e0b; }
+.macros__item--protein .macros__fill {
+  background-color: #3b82f6;
+}
+.macros__item--fat .macros__fill {
+  background-color: #ef4444;
+}
+.macros__item--carbs .macros__fill {
+  background-color: #f59e0b;
+}
 
 .meals-grid {
   display: grid;
@@ -260,12 +266,12 @@
   .meals-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .diary-summary__macros {
     grid-template-columns: 1fr;
     gap: 15px;
   }
-  
+
   .math-item__value {
     font-size: 1.5rem;
   }
@@ -273,7 +279,10 @@
 
 .modal {
   position: fixed;
-  top: 0; left: 0; width: 100%; height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background: rgba(0, 0, 0, 0.8);
   display: flex;
   justify-content: center;
@@ -292,7 +301,7 @@
   padding: 25px;
   width: 90%;
   max-width: 500px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
 .modal__header {
@@ -316,7 +325,9 @@
   cursor: pointer;
   transition: color 0.2s;
 }
-.modal__close:hover { color: #ef4444; }
+.modal__close:hover {
+  color: #ef4444;
+}
 
 .modal__search {
   display: flex;
@@ -328,13 +339,15 @@
   flex: 1;
   padding: 12px 15px;
   border-radius: 10px;
-  border: 1px solid rgba(255,255,255,0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   background: #1a1a1a;
   color: white;
   font-size: 1rem;
   outline: none;
 }
-.modal__search input:focus { border-color: #3b82f6; }
+.modal__search input:focus {
+  border-color: #3b82f6;
+}
 
 .modal__search button {
   padding: 0 20px;
@@ -346,7 +359,9 @@
   font-weight: 600;
   transition: background 0.2s;
 }
-.modal__search button:hover { background: #2563eb; }
+.modal__search button:hover {
+  background: #2563eb;
+}
 
 .modal__results {
   list-style: none;
@@ -358,14 +373,16 @@
 
 .modal__results li {
   padding: 12px 15px;
-  border-bottom: 1px solid rgba(255,255,255,0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   cursor: pointer;
   color: #e5e7eb;
   display: flex;
   justify-content: space-between;
   transition: background 0.2s;
 }
-.modal__results li:hover { background: rgba(255,255,255,0.05); }
+.modal__results li:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
 
 .modal__results-cals {
   color: #a0aab2;
@@ -373,10 +390,10 @@
 }
 
 .modal__portion {
-  background: rgba(0,0,0,0.2);
+  background: rgba(0, 0, 0, 0.2);
   padding: 15px;
   border-radius: 12px;
-  border: 1px solid rgba(255,255,255,0.05);
+  border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .modal__selected-food {
@@ -397,7 +414,7 @@
   width: 100px;
   padding: 10px;
   border-radius: 8px;
-  border: 1px solid rgba(255,255,255,0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   background: #1a1a1a;
   color: white;
   font-size: 1rem;
@@ -416,7 +433,9 @@
   cursor: pointer;
   transition: background 0.2s;
 }
-.modal__add-btn:hover { background: #059669; }
+.modal__add-btn:hover {
+  background: #059669;
+}
 
 .diary-nav__date-wrapper {
   position: relative;
