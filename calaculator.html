@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles/calculator.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a href="index.html" class="logo">FITAPP</a>
+        <nav class="header__nav">
+          <ul class="header__list">
+            <a href="calaculator.html"
+              ><li class="header__list-item active_header">Калькулятор калорій</li></a
+            >
+            <a href="diary.html"
+              ><li class="header__list-item">Щоденник харчування</li></a
+            >
+            <a href="products.html"
+              ><li class="header__list-item">Продукти</li></a
+            >
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <div class="input__blocks">
+          <div class="info__block">
+            <h3 class="info__block-title">Твої дані</h3>
+            <div class="info__block-item">
+              <label class="age__text">Вік</label>
+              <input type="number" placeholder="25" class="age__input" />
+            </div>
+
+            <div class="info__block-item">
+              <label class="gender__text">Стать</label>
+              <div class="gender__option">
+                <button class="active">♂️ Чол.</button>
+                <button>♀️ Жін.</button>
+              </div>
+            </div>
+
+            <div class="info__block-item">
+              <label class="height__text">Зріст (см)</label>
+              <input type="number" placeholder="175" class="height__input" />
+            </div>
+
+            <div class="info__block-item">
+              <label class="weight__text">Вага (кг)</label>
+              <input type="number" placeholder="75" class="weight__input" />
+            </div>
+          </div>
+
+          <div class="activities__block">
+            <h3 class="info__block-title">Твоя активність</h3>
+            <div class="training__block-item">
+              <label class="training__text">Тренувань в тиждень</label>
+              <div class="training__options">
+                <button class="active">1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>4</button>
+                <button>5+</button>
+              </div>
+            </div>
+
+            <div class="steps__block-item">
+              <label class="steps__text">Кроків за день</label>
+              <div class="steps__slider">
+                <input
+                  type="range"
+                  id="steps-slider"
+                  min="0"
+                  max="50000"
+                  step="1000"
+                  value="8000"
+                />
+                <span id="steps-value">8000</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="results block">
+          <h2 class="results__title">Твій результат</h2>
+
+          <div class="results__content">
+            <div class="results__chart-wrapper">
+              <div class="circular-chart">
+                <div class="circular-chart__inner">
+                  <span class="circular-chart__value">2100</span>
+                  <span class="circular-chart__label">ККАЛ/день</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="results__macros macros">
+              <h3 class="macros__title">Розподіл БЖВ</h3>
+
+              <div class="macros__item macros__item--protein">
+                <span class="macros__label">Білки</span>
+                <div class="macros__track">
+                  <div class="macros__fill" style="width: 30%"></div>
+                </div>
+                <span class="macros__value">30% (158г)</span>
+              </div>
+
+              <div class="macros__item macros__item--fat">
+                <span class="macros__label">Жири</span>
+                <div class="macros__track">
+                  <div class="macros__fill" style="width: 25%"></div>
+                </div>
+                <span class="macros__value">25% (58г)</span>
+              </div>
+
+              <div class="macros__item macros__item--carbs">
+                <span class="macros__label">Вуглеводи</span>
+                <div class="macros__track">
+                  <div class="macros__fill" style="width: 45%"></div>
+                </div>
+                <span class="macros__value">45% (236г)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/calculator.js"></script>
+  </body>
+</html>

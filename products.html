@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+    <link rel="stylesheet" href="styles/products.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <a href="index.html" class="logo">FITAPP</a>
+        <nav class="header__nav">
+          <ul class="header__list">
+            <a href="calaculator.html">
+              <li class="header__list-item">Калькулятор калорій</li>
+            </a>
+            <a href="diary.html">
+              <li class="header__list-item">Щоденник харчування</li>
+            </a>
+            <a href="products.html">
+              <li class="header__list-item active_header">Продукти</li>
+            </a>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main products-page">
+      <div class="container">
+        <section class="categories" id="categories-section">
+          <h2 class="categories__title">Обери макронутрієнт</h2>
+
+          <div class="slider-wrapper">
+            <button class="slider-arrow slider-arrow--prev" id="cat-prev">
+              ❮
+            </button>
+
+            <div class="categories__slider" id="categories-slider">
+              <div
+                class="categories__card categories__card--protein"
+                data-category="protein"
+              >
+                <h3 class="categories__card-title">Білок</h3>
+              </div>
+              <div
+                class="categories__card categories__card--fats"
+                data-category="fats"
+              >
+                <h3 class="categories__card-title">Жири</h3>
+              </div>
+              <div
+                class="categories__card categories__card--carbs"
+                data-category="carbs"
+              >
+                <h3 class="categories__card-title">Вуглеводи</h3>
+              </div>
+              <div
+                class="categories__card categories__card--fiber"
+                data-category="fiber"
+              >
+                <h3 class="categories__card-title">Клітковина</h3>
+              </div>
+            </div>
+
+            <button class="slider-arrow slider-arrow--next" id="cat-next">
+              ❯
+            </button>
+          </div>
+        </section>
+
+        <section class="showcase hidden" id="showcase-section">
+          <div class="showcase__header">
+            <button class="showcase__back-btn" id="back-btn">⬅ Назад</button>
+            <h2 class="showcase__title" id="showcase-title">Продукти</h2>
+          </div>
+
+          <div class="slider-wrapper">
+            <button class="slider-arrow slider-arrow--prev" id="prod-prev">
+              ❮
+            </button>
+
+            <div class="showcase__slider" id="products-slider"></div>
+
+            <button class="slider-arrow slider-arrow--next" id="prod-next">
+              ❯
+            </button>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="js/products.js"></script>
+  </body>
+</html>
