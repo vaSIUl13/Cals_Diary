@@ -262,21 +262,6 @@
   border-color: #3b82f6;
 }
 
-@media (max-width: 768px) {
-  .meals-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .diary-summary__macros {
-    grid-template-columns: 1fr;
-    gap: 15px;
-  }
-
-  .math-item__value {
-    font-size: 1.5rem;
-  }
-}
-
 .modal {
   position: fixed;
   top: 0;
@@ -469,4 +454,30 @@
   width: 100%;
   height: 100%;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .meals-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .diary-summary__macros {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .math-item__value {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .modal__search {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .modal__search button {
+    padding: 1rem 0;
+  }
 }
